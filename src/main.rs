@@ -1,3 +1,27 @@
+fn main() {
+    let op = Some(1);
+    let sum = 2 + op.unwrap_or(0);
+    println!("Sum is: {sum}");
+}
+/* 
+#[derive(Debug)]
+enum IpAddKind {
+    V4(u8, u8, u8, u8),
+    V6(String),
+}
+
+fn main () {
+    let home = IpAddKind::V4(127, 0, 0, 1);
+    let loopback = IpAddKind::V6(String::from("::1"));
+    
+    route(home);
+    route(loopback);
+}
+
+fn route (ip: IpAddKind) {
+    println!("Routing request to {:?}", ip);
+}*/
+
 /* 
 #[derive(Debug)]
 enum IpAddKind {
